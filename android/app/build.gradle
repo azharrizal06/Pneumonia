@@ -31,9 +31,10 @@ keystoreProperties.load(new FileInputStream(keystorePropertiesFile))
 }
 android {
     namespace "com.azhar.model22"
-    compileSdkVersion flutter.compileSdkVersion
+    // compileSdkVersion flutter.compileSdkVersion
+    compileSdkVersion 33
     ndkVersion flutter.ndkVersion
-
+    ndkVersion "25.1.8937393"
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
@@ -56,6 +57,7 @@ android {
         targetSdkVersion 29
         versionCode flutterVersionCode.toInteger()
         versionName flutterVersionName
+        
     }
 
     signingConfigs {
